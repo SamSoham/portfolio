@@ -1,0 +1,170 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{scroll-behavior: smooth;}
+.right button{
+    font-family: 'Poppins', sans-serif;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.right button a {text-decoration: none;}
+.right button:hover{background-color: aqua;}
+.logo{
+    margin: 0 2rem;
+}
+.logo img{
+    width: 5rem;
+    height: 4rem;
+}
+header{
+    background-color: rgb(24, 19, 19);
+    clip-path: polygon(0 0,100% 0,100% 98%,78% 90%,0 98%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.left a{
+    color: azure;
+    text-decoration: none;
+    margin-right: 2vw;
+    text-transform: uppercase;
+}
+nav{
+    padding: 2rem 0;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.left{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.main{display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2.5rem 0;}
+.lft{flex: 1;
+display: flex;
+justify-content: center;}
+.lft img{width: 300px;
+height: 500px;}
+.rght{color: azure;
+margin-left: 1rem;
+margin-top: -4rem;
+flex: 1;}
+.rght h6{font-size: 4vmin;
+color: rgb(39, 180, 180);
+font-weight: 200;
+margin-bottom: 0.5rem;}
+.rght h1{font-size: 7vmin;
+font-weight: 500;
+line-height: 1.2;
+margin-bottom: 0.5rem;}
+.rght h1 span{color: aqua;}
+.rght p{line-height: 2;
+margin-bottom: 2rem;}
+.rght button{font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    border: none;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;}
+     .rght button:hover{
+    border: 1px solid aqua;
+color: aqua;}
+section{padding: 4rem ;}
+.box
+{display: flex;
+justify-content: center;
+align-items: center;}
+.image img{width: 400px;
+height: 400px;
+padding-left: 2rem;}
+.icon img{width: 80px;
+height: 80px;
+transform: scale(0.5);}
+.image , .intro{flex: 1;}
+.intro h1{margin-bottom: 2rem;
+font-size: 5vmin; font-weight: 400;
+}
+.intro h1 span{color: aqua;}
+.intro h3{font-size: 3vmin; margin-bottom: 1rem; font-weight: 400;}
+.intro p{font-family: 'Lato', sans-serif; margin-bottom: 1rem; line-height: 1.7;}
+.content h1{text-align: center; font-size: 4vmin; color: rgb(43, 38, 38); font-weight: 700;} .content h1 span{color: aqua;}
+.content p{margin: 1rem 0; text-align: center; color: rgb(41, 36, 36); font-weight: 400;}
+.card img{width: 80px; height: 80px; border: 1px solid grey; position: absolute; top: -3rem; background-color: rgb(247, 244, 238);}
+.card{position: relative; display: flex;  align-items: center; flex-direction: column;
+     background: azure; margin-right: 4rem; padding: 3rem 2rem; 
+     font-family: 'Lato', sans-serif; line-height: 1.5; transition: 0.7s all;}
+.services{background: rgb(233, 232, 232);}
+.card:hover{background-color: rgb(11, 12, 12);} .card:hover h2, .card:hover p{color: white;} 
+.wrapper{display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 4rem;}
+.card h2{color: rgb(25, 45, 230); font-weight: 700;}
+.bo{text-align: center; } .bo h1 span{color: aqua;} .bo h1 ,p{ margin-bottom: 2rem;}
+.exap{display: flex; align-items: center; justify-content: space-evenly;}
+.wor a img{width: 200px; height: 300px;}
+.contact{background: rgb(27, 27, 27);}
+.contanr{text-align: center;} .contanr h1 span{color: aqua;} .contanr h1{color: azure;}
+.mail img{width: 120px; height: 120px; margin-bottom: 1rem;} .mail{color: beige; margin: 3rem;}
+.option{display: flex; align-items: flex-start; justify-content: center; }
+.mail h6{font-size: 2vmin;}
+.white{width: 300px; height: 200px;}
+.name{display: grid; grid-template-columns: repeat(2,1fr); grid-gap: 2rem; margin-bottom: 1.5rem;}
+.butn button{font-family: 'Poppins', sans-serif;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer}
+.name input{padding: 0.5rem; color: white; background: none; border: 1px solid rgb(248, 238, 238); outline: none; font-family: 'Poppins', sans-serif; font-weight: 700;}
+.feedback textarea{padding: 0.5rem; font-family: 'Poppins', sans-serif; font-weight: 700; margin: 1rem auto;}
+.feedback{text-align: center;}  
+footer{padding: 1rem 0; display: flex; align-items: center;}  footer img{width: 60px; height:60px;}
+.site{position: relative;}
+.hbtn img{width: 30px; height: 30px; cursor: pointer;}
+.hbtn{position: absolute; top: 20px; right: 1rem; z-index: 1; display: none;}
+.mnav{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2; 
+    background-color: aquamarine; padding: 2rem;text-align: center; margin-top: -700%;
+transition: 0.5s ease-out;}
+.active{margin-top:0%;}
+.pop{width: 300px; height: 240px; background: aqua; display: flex; position: absolute; bottom:10%; left: 40%;
+     flex-direction: column; border-radius: 10px;text-align: center; opacity: 0;  }
+.open{animation: popup 1s linear forwards; }    
+.pop h6{font-size: 4vmin; padding: 10px;} .pop h2{font-size: 7vmin;}
+.pop button{font-size: 2vmin; padding: 1rem; margin: 0 4rem;}
+.up a img{width: 40px; height: 40px;}
+.up button{background: none; outline: none; border: 0;}
+.up{position: fixed; top: 90%;right:1rem;z-index: 1000;}
+.mnav ul li{list-style-type: none;}
+.mnav ul li a{color: black; text-decoration: none; font-size: 4vmin;}
+.cls img{width: 40px; width: 40px;}
+.cls{position: absolute; top: 10px; right: 10px;border: none;cursor: pointer;}
+@media (max-width: 1100px){.wrapper{grid-template-columns: repeat(1,1fr); grid-gap: 4rem;margin: inherit 2rem;margin-left: 3rem;}}
+@media (max-width:965px){.intro{margin-left: 20px;}}
+@media(max-width:800px){.box{flex-direction: column;}}
+@media(max-width:630px){.hbtn{display: block;} .left,.right{display: none;} .pop{left:20%; bottom: 15%;}}
+@media(max-width:600px){.main{flex-direction: column;}.rght{margin-top: 1rem;}
+header{clip-path:polygon(0 0,100% 0,100% 99%, 84% 94%,0 99%);} .mail img{width: 80px; height: 80px;}}
+@media(max-width:530px){.feedback textarea{width: 80%;} .name{display: flex; flex-direction: column;} .option{flex-direction: column; margin-left: 4rem;}}
+@media(max-width:422px){.exap{flex-direction: column;}.wor{margin-bottom: 1rem;}
+.option{margin-left: 2rem;}.mail h2{font-size: 4vmin;}.mail:nth-child(1){margin-left: 4.0rem;} 
+.mail h6{font-size: 3vmin;} .image img{width: 280px; height: 320px;}}
+@media(max-width:400px){.about{padding: 1rem;} .wrapper{margin-left: 1rem;}}
+@keyframes popup{
+ 0%{opacity: 0;}
+ 50%{transform: translateY(-80px);}
+ 100%{transform: translateY(-120px); opacity: 1;}
+}
