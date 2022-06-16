@@ -114,7 +114,9 @@ font-size: 5vmin; font-weight: 400;
 .card h2{color: rgb(25, 45, 230); font-weight: 700;}
 .bo{text-align: center; } .bo h1 span{color: aqua;} .bo h1 ,p{ margin-bottom: 2rem;}
 .exap{display: flex; align-items: center; justify-content: space-evenly;}
+.wor img{transition: 0.6s;}
 .wor a img{width: 200px; height: 300px;}
+.wor a:hover img{transform: scale(1.05);}
 .contact{background: rgb(27, 27, 27);}
 .contanr{text-align: center;} .contanr h1 span{color: aqua;} .contanr h1{color: azure;}
 .mail img{width: 120px; height: 120px; margin-bottom: 1rem;} .mail{color: beige; margin: 3rem;}
@@ -146,7 +148,7 @@ transition: 0.5s ease-out;}
 .cls img{width: 40px; width: 40px;}
 .cls{position: absolute; top: 10px; right: 10px;border: none;cursor: pointer;}
 .pop{position: absolute;padding: 5px; top: 5%; left: 40%; width: 250px; height: 240px; 
-    background: aqua; z-index: 1; display: flex;flex-direction: column; margin-left: 100%;}
+    background: aqua; z-index: 1; display: flex;flex-direction: column; margin-left: -100%;}
 .pop h6{font-size: 4vmin;} .pop h1{font-size: 6vmin;} .pop button{padding: 10px; margin: auto 2.7rem;}
 .pop.opn{margin-left: 0%; animation: popup 1s linear 0.4s forwards;}
 @media (max-width: 1100px){.wrapper{ grid-template-columns: repeat(1,1fr); grid-gap: 4rem;margin: inherit 2rem;margin-left: 3rem;}}
