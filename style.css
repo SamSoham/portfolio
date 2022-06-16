@@ -83,9 +83,7 @@ margin-bottom: 2rem;}
     border: 1px solid white;
     cursor: pointer;
     transition: 0.3s;}
-     .rght button:hover{
-    border: 1px solid aqua;
-color: aqua;}
+.rght button:hover{border: 1px solid aqua;color: aqua;}
 section{padding: 4rem ;}
 .box
 {display: flex;
@@ -140,11 +138,6 @@ footer{padding: 1rem 0; display: flex; align-items: center;}  footer img{width: 
     background-color: aquamarine; padding: 2rem;text-align: center; margin-top: -700%;
 transition: 0.5s ease-out;}
 .active{margin-top:0%;}
-.pop{width: 300px; height: 240px; background: aqua; display: flex; position: absolute; bottom:10%; left: 40%;
-     flex-direction: column; border-radius: 10px;text-align: center; opacity: 0;  }
-.open{animation: popup 1s linear forwards; }    
-.pop h6{font-size: 4vmin; padding: 10px;} .pop h2{font-size: 7vmin;}
-.pop button{font-size: 2vmin; padding: 1rem; margin: 0 4rem;}
 .up a img{width: 40px; height: 40px;}
 .up button{background: none; outline: none; border: 0;}
 .up{position: fixed; top: 90%;right:1rem;z-index: 1000;}
@@ -152,7 +145,11 @@ transition: 0.5s ease-out;}
 .mnav ul li a{color: black; text-decoration: none; font-size: 4vmin;}
 .cls img{width: 40px; width: 40px;}
 .cls{position: absolute; top: 10px; right: 10px;border: none;cursor: pointer;}
-@media (max-width: 1100px){.wrapper{grid-template-columns: repeat(1,1fr); grid-gap: 4rem;margin: inherit 2rem;margin-left: 3rem;}}
+.pop{position: absolute;padding: 5px; top: 5%; left: 40%; width: 250px; height: 240px; 
+    background: aqua; z-index: 1; display: flex;flex-direction: column; margin-left: 100%;}
+.pop h6{font-size: 4vmin;} .pop h1{font-size: 6vmin;} .pop button{padding: 10px; margin: auto 2.7rem;}
+.pop.opn{margin-left: 0%; animation: popup 1s linear 0.4s forwards;}
+@media (max-width: 1100px){.wrapper{ grid-template-columns: repeat(1,1fr); grid-gap: 4rem;margin: inherit 2rem;margin-left: 3rem;}}
 @media (max-width:965px){.intro{margin-left: 20px;}}
 @media(max-width:800px){.box{flex-direction: column;}}
 @media(max-width:630px){.hbtn{display: block;} .left,.right{display: none;} .pop{left:20%; bottom: 15%;}}
@@ -165,6 +162,6 @@ header{clip-path:polygon(0 0,100% 0,100% 99%, 84% 94%,0 99%);} .mail img{width: 
 @media(max-width:400px){.about{padding: 1rem;} .wrapper{margin-left: 1rem;}}
 @keyframes popup{
  0%{opacity: 0;}
- 50%{transform: translateY(-80px);}
- 100%{transform: translateY(-120px); opacity: 1;}
+ 30%{transform: translateY(50px); opacity: 0.5;}
+ 100%{transform: translateY(200px); opacity: 1;}
 }

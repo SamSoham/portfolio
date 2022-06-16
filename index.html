@@ -27,6 +27,11 @@
     <div class="up">
         <button><a href="#"><img src="./up.png" alt=""></a></button>
     </div>
+    <div class="pop">
+        <h6>We appreciate your <br>Feedback</h6>
+        <h1>Thank you</h1>
+        <button class="mario">OK</button>
+    </div>
     <header>
         <div class="container">
         <nav>
@@ -146,11 +151,6 @@
     <footer>
         <img src="./enigma.32eaece0.png" alt="">
         <h3>@enigma_vssut</h3>
-        <div class="pop">
-            <h6>We appreciate your <br> Feedback</h6>
-            <h2>Thank You</h2>
-            <button id="ok">OK</button>
-        </div>
     </footer>
    </div>
    <script>
@@ -164,12 +164,13 @@
     let clear = document.querySelector('.butn')
     let inputs = document.querySelectorAll('input')
     let ta = document.querySelector('#ta')
-    let ok =document.querySelector('#ok')
+    let ok =document.querySelector('.mario')
     clear.addEventListener('click',()=>{ta.value=""})
     clear.addEventListener('click',()=>{inputs.forEach(input=> input.value="")})
     let popup = document.querySelector('.pop')
-    clear.addEventListener('click',()=>{popup.classList.add('open')})
-    ok.addEventListener('click', ()=>{popup.classList.remove('open')})
+    clear.addEventListener('click',()=>{popup.classList.add('opn')})
+    ok.addEventListener('click', ()=>{popup.classList.remove('opn')})
+
    </script>
 </body>
 </html>
